@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const publicPath = path.join(__dirname, '..', 'public');
-const port = process.env.PROT || 3001; // 'process.env.PROT' is a build-in character in Heroku
+const port = process.env.PORT || 3001; // 'process.env.PORT' is a build-in character in Heroku
 
 app.use(express.static(publicPath));
 
